@@ -1,0 +1,43 @@
+public int FindSum(int[] arr) \\ Spatial Complexity O(n)
+        {
+
+            int[] maxSum = new int[arr.Length]; //O(1) , Spatial Complexity O(n)
+
+            maxSum[arr.Length-1] = arr[arr.Length - 1]; //O(2)
+
+            if (arr[arr.Length - 2] > arr[arr.Length - 1]) //O(2)
+            {
+                maxSum[arr.Length - 2] = arr[arr.Length - 2]; //O(2)
+            }
+            else
+            {
+                maxSum[arr.Length - 2] = arr[arr.Length - 1]; //O(2)
+            }
+
+            if (arr[arr.Length - 3] + arr[arr.Length - 1] > arr[arr.Length - 2])//O(5)
+            {
+                maxSum[arr.Length - 3] = arr[arr.Length - 3] + arr[arr.Length - 1]; //O(4)
+            }
+            else
+            {
+                maxSum[arr.Length - 3] = arr[arr.Length - 2];//O(2)
+            }
+
+            for (int i = arr.Length - 4; i >= 0; i--) //O(n-4)
+            {
+                if (arr[i] + maxSum[i + 2] > arr[i + 1] + maxSum[i + 3]) //O(7)
+                {
+                    maxSum[i] = arr[i] + maxSum[i + 2]; //O(3)
+                }
+                else
+                {
+                    maxSum[i] = arr[i + 1] + maxSum[i + 3];//O(3)
+                }
+            }
+
+            return maxSum[0]; //O(1)
+        }
+    }
+
+Time Complexity : O(35+n-4) = O(n) 
+Spatial Complexity : O(2n) = O(n)

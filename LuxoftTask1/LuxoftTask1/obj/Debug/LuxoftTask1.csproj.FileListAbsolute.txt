@@ -1,0 +1,6 @@
+C:\MyProjects\LuxoftTask1\LuxoftTask1\bin\Debug\LuxoftTask1.exe.config
+C:\MyProjects\LuxoftTask1\LuxoftTask1\bin\Debug\LuxoftTask1.exe
+C:\MyProjects\LuxoftTask1\LuxoftTask1\bin\Debug\LuxoftTask1.pdb
+C:\MyProjects\LuxoftTask1\LuxoftTask1\obj\Debug\LuxoftTask1.csprojResolveAssemblyReference.cache
+C:\MyProjects\LuxoftTask1\LuxoftTask1\obj\Debug\LuxoftTask1.exe
+C:\MyProjects\LuxoftTask1\LuxoftTask1\obj\Debug\LuxoftTask1.pdb
